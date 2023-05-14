@@ -3,6 +3,17 @@ const searchGithub = async () => {
     const response = await fetch(`https://api.github.com/users/${username}`);
     const detailsContainer = document.querySelector(".details");
     const data = await response.json();
+    
+    
+const themeToggle = document.querySelector('#themeToggle');
+
+themeToggle.addEventListener('change', function() {
+  if(this.checked) {
+    document.body.classList.add('dark-mode');
+  } else {
+    document.body.classList.remove('dark-mode');
+  }
+});
 
     if (response.ok) {
         detailsContainer.style.display = "flex";
