@@ -126,3 +126,13 @@ body{
     align-items: center;
     font-size: 13px;
 }
+
+.switchtheme{
+    background-color: #fff; /* Light mode background color */
+    color: #000; /* Light mode text color */
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 0px;
+  }
